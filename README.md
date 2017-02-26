@@ -12,7 +12,7 @@ Easy to use node module that controls the Raspberry pi GPIO via the file system.
 NOTE: the program using this module must be running with superuser privileges to interact with the file system GPIO.
 
 ```javascript 1.8
-let gpio = require('rpi-gpio-control');
+let gpio = require('node-rpi-gpio-control');
 
 // sets the values for pin HIGH and LOW.
 
