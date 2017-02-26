@@ -1,6 +1,6 @@
 {
   "name": "rpi-gpio-control",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Controls the raspberry pi GPIO via the file system.",
   "main": "index.js",
   "scripts": {
