@@ -9,6 +9,8 @@ Easy to use module that controls the Raspberry pi GPIO via the file system.
 
 ## Useage
 
+NOTE: the program using this module must be running with superuser privileges to interact with the file system GPIO.
+
 ```javascript
 let gpio = require('rpi-gpio-control');
 
