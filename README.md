@@ -2,6 +2,11 @@
 
 Easy to use module that controls the Raspberry pi GPIO via the file system.
 
+
+## Installation
+`npm install rpi-gpio-control --save`
+
+
 ## Useage
 
 ```javascript
@@ -19,7 +24,7 @@ gpio.setup(1, gpio.modes.write, function() {
 });
 
 // unexports the pin
-app.teardown(1, function() {
+gpio.teardown(1, function() {
 });
 
 
@@ -33,7 +38,7 @@ gpio.setup(2, gpio.modes.read, function() {
 });
 
 // unexports the pin
-app.teardown(2, function() {
+gpio.teardown(2, function() {
 });
 
 ```
