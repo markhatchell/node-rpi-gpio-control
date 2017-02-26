@@ -17,9 +17,6 @@ function rpiGPIOControl() {
         value: '/value'
     };
 
-    this.main = function() {
-    };
-
     this.setup = function(pin, mode, cb) {
         fs.writeFile(paths.export, pin, function() {
             pinsOn.push(pin);
