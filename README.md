@@ -1,3 +1,55 @@
-# rpi-gpio-control
+# rpi gpio control
 
-Controls the raspberry pi GPIO via the file system.
+Easy to use module that controls the Raspberry pi GPIO via the file system.
+
+## Useage
+
+```javascript
+let gpio = require('rpi-gpio-control');
+
+// sets the values for pin HIGH and LOW.
+
+const PIN_ON = 0;
+const PIN_OFF = 1;
+
+// exports the pin and sets the mode to write
+gpio.setup(1, gpio.modes.write, function() {
+    gpio.write(1, PIN_OFF, function() {
+    });
+});
+
+// unexports the pin
+app.teardown(1, function() {
+});
+
+
+
+// exports the pin and sets the mode to read
+gpio.setup(2, gpio.modes.read, function() {
+    gpio.read(2, function(err, data) {
+		if (err) throw err;
+    	console.log(data);
+    });
+});
+
+// unexports the pin
+app.teardown(2, function() {
+});
+
+```
+
+## Methods
+
+|Method|Description|
+|---|---|
+|`setup(pin, mode, cb)`| Sets up the pin up for use and sets the mode on the pin. |
+|`teardown(pin, cb)`| Closes the pin so it is not in useany more. |
+|`write(pin, value, cb)`| Writes a value to the pin. |
+|`read(pin, cb)`| Reads the value of a pin. `cb(err, data)` |
+
+
+## Properties
+
+| Property |Description|
+|---|---|
+|`modes`| Provides access to the pin modes. `gpio.modes.write` & `gpio.modes.read` |
