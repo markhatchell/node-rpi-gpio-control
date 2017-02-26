@@ -1,0 +1,11 @@
+{
+  "name": "rpi-gpio-control",
+  "version": "1.0.0",
+  "description": "Controls the raspberry pi GPIO via the file system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
