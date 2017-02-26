@@ -1,17 +1,17 @@
-# rpi gpio control
+# node rpi gpio control
 
-Easy to use module that controls the Raspberry pi GPIO via the file system.
+Easy to use node module that controls the Raspberry pi GPIO via the file system.
 
 
 ## Installation
-`npm install rpi-gpio-control --save`
+`npm install node-rpi-gpio-control --save`
 
 
 ## Useage
 
 NOTE: the program using this module must be running with superuser privileges to interact with the file system GPIO.
 
-```javascript
+```javascript 1.8
 let gpio = require('rpi-gpio-control');
 
 // sets the values for pin HIGH and LOW.
